@@ -1,0 +1,83 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"> -->
+  <title>Awesome Audio Visualization</title>
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <script language="javascript" src="libraries/p5.dom.js"></script>
+  <script language="javascript" src="libraries/p5.sound.js"></script>
+  <script language="javascript" type="text/javascript" src="aav.js"></script>
+  <style>
+  	html {width: 100%; height: 100%; background-color: #000}
+  	body {padding: 0; margin: 0; width: 100%; height: 100%;}
+  	#p5_loading {
+  		width: 400;
+  		height: 100;
+  		background: url('assets/loader-bg.gif') center center;
+		background-size: cover;
+		background-color: #000;
+
+  	}
+  	#logo {
+  		width:392.9;
+  		height: 75.9;
+  	}
+  	.centered {
+  		position: absolute;
+  		top: 0;
+  		bottom: 0;
+  		left: 0;
+  		right: 0;
+  		margin: auto auto;
+  	}
+
+  	.link {
+  		text-align: center;
+  		width: 100%;
+  		bottom: 0;
+  		position: absolute;
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 12px;
+		color: #fff;
+  	}
+  	a:link,a:active,a:visited {
+  		text-decoration: none;
+  		color: #fff;
+  	}
+
+  	a:hover {
+    	color: #7e7e7e;
+	}
+
+	.signed a,.signed a:active,.signed a:visited {
+		color: #7e7e7e;
+	}
+	.signed a:hover {
+		color: #fff;
+	}
+
+	.signed {
+		color: #585858;
+		display: block;
+		padding-top: 5px;
+	}
+
+
+
+
+  </style>
+</head>
+
+<body>
+	
+	<p class="link"><a href="http://github.com/willianjusten/awesome-audio-visualization">Go to the Awesome Audio Visualization list</a><br/><span class="signed">Audio visualization made with ❤ by <a href="http://cargocollective.com/marcioribeiro">Márcio Ribeiro</a></span></p>
+
+	<div id="logo" class="centered">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392.9 75.9" fill="#ffffff"><path d="M145.5 11.3h-7l-1.1 2.5h-2.7l6-13.3h2.7l6 13.3h-2.7l-1.2-2.5zm-3.4-8L139.6 9h4.9l-2.4-5.7zm24.6 10.5h-2.1l-1.7-4.2-1.4-4.2-1.4 4.2-1.6 4.1h-2.1L151.5.4h2.8l3.1 9.6 3.2-9.6h1.6l3.3 9.6 3-9.6h2.8l-4.6 13.4zm20.1 0h-10V.5h10v2.4h-7.5V6h7.2v2.3h-7.2v3h7.5v2.5zm14.3-10.1c-.5-.8-1.7-1.5-3.2-1.5-1.9 0-2.8.8-2.8 1.8 0 1.2 1.4 1.5 3 1.7 2.8.3 5.4 1.1 5.4 4.2 0 3-2.6 4.2-5.6 4.2-2.7 0-4.8-.8-5.8-3.3l2.1-1.1c.6 1.5 2.1 2.1 3.7 2.1s3.1-.6 3.1-2c0-1.3-1.3-1.8-3.1-2-2.7-.3-5.2-1-5.2-4 0-2.7 2.7-3.9 5.2-3.9 2.1 0 4.2.6 5.2 2.6l-2 1.2zm21.3 3.5c0 3.4-2.1 6.9-6.8 6.9-4.7 0-6.8-3.4-6.8-6.9s2.2-7 6.8-7c4.5 0 6.8 3.5 6.8 7zm-11.2 0c.1 2.2 1.2 4.5 4.4 4.5 3.1 0 4.3-2.4 4.4-4.5 0-2.2-1.2-4.8-4.4-4.8-3.2.1-4.5 2.6-4.4 4.8zm28.4-3.1l-4.3 5.8h-.5l-4.2-5.8v9.7H228V.5h2.9l4.2 5.7 4.2-5.7h2.9v13.3h-2.5V4.1zm18.6 9.7h-10V.5h10v2.4h-7.5V6h7.2v2.3h-7.2v3h7.5v2.5zM34.3 67h-22l-3.6 8H0l19-42.3h8.7l19 42.3H38l-3.7-8zm-11-25.5l-7.8 18h15.7l-7.9-18zm69.8-8.8v24.2c0 12.5-7.7 18.9-18.3 18.9-10.1 0-18.8-6.1-18.8-18.9V32.7h8v24.2c0 7.6 4.3 11.7 10.9 11.7 6.6 0 10.3-4.4 10.3-11.7V32.7h7.9zm57.1 20.7c.2 10.7-6.3 21.5-21.1 21.5h-16.6V32.7h16.6c14.4 0 20.9 10.3 21.1 20.7zm-29.9 13.9h8.7c9.6 0 13.4-7 13.2-13.9-.2-6.6-4-13.2-13.2-13.2h-8.7v27.1zm45.6 7.6V32.7h7.9V75h-7.9zm68-20.9c-.1 10.9-6.8 21.9-21.7 21.9-14.9 0-21.7-10.7-21.7-21.8 0-11.1 7.1-22.3 21.7-22.3S234 43 233.9 54zm-35.6.2c.2 6.9 3.9 14.4 13.9 14.4s13.7-7.5 13.8-14.4c.1-7.1-3.9-15.1-13.8-15.1s-14 8-13.9 15.1zm103.8 20.9h-8.3l-17.6-42.4h8.9l12.7 32.9 12.8-32.9h8.9l-17.4 42.4zm33.1-.2V32.7h7.9V75h-7.9zm25.2-42.2h32.5v3.7l-21.9 31h21.9v7.5h-33v-4.6l21.4-30.2h-20.9v-7.4z"/></svg>
+	</div>
+
+	<div id="p5_loading" class="centered"></div>
+	
+
+</body>
+</html>
