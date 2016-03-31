@@ -1,0 +1,22 @@
+{
+  "name": "aav-logo",
+  "version": "1.0.0",
+  "description": "An audio visualization for the [Awesome Audio Viz list](https://github.com/willianjusten/awesome-audio-visualization)",
+  "main": "aav.js",
+  "scripts": {
+    "build": "./node_modules/.bin/uglifyjs libraries/*.js aav.js -o main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcioshiz/aav-logo.git"
+  },
+  "author": "Willian Justen de Vasconcellos <willianjustenqui@gmail.com> (http://willianjusten.com.br/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcioshiz/aav-logo/issues"
+  },
+  "homepage": "https://github.com/marcioshiz/aav-logo#readme",
+  "devDependencies": {
+    "uglify-js": "^2.6.2"
+  }
+}
