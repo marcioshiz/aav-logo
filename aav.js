@@ -16,7 +16,7 @@ function preload() {
 }
 
 function setup() {
-	myCanvas = createCanvas(windowWidth, windowHeight, P2D);
+	myCanvas = createCanvas(windowWidth, windowHeight, 'p2d');
 	background(0);
 	frameRate(30);
 	smooth();
